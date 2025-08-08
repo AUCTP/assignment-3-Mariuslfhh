@@ -15,7 +15,7 @@ def sim_stats(dems):
     bot_perc = np.percentile(dems, 5)
     top_perc = np.percentile(dems, 95)
 
-    print(f"\nStatistics for {num_sims} simulations:")
+    print(f"\nStatistics for {num_sims} simulations with daily demand of {lampdaDemand} units:")
     print(f"Mean: {mean:.2f}")
     print(f"Standard deviation: {std_dev:.2f}")
     print(f"Bottom 5th percentile: {bot_perc:.2f}")
@@ -63,7 +63,3 @@ while True:
 
     else: 
         print("Please input valid choice number")
-
-
-
-
